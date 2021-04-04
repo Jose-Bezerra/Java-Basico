@@ -1,8 +1,8 @@
-package com.loiane.cursojava.exercicios;
+package com.loiane.cursojava.labs.aula17;
 
 import java.util.Scanner;
 
-public class ValidaNotaEntreZeroEDez {
+public class Exer01_ValidaNotaEntreZeroEDez {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean notaValida = false;

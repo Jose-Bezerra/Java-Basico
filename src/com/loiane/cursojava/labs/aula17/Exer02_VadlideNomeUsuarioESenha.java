@@ -1,8 +1,8 @@
-package com.loiane.cursojava.exercicios;
+package com.loiane.cursojava.labs.aula17;
 
 import java.util.Scanner;
 
-public class VadlideNomeUsuarioESenha {
+public class Exer02_VadlideNomeUsuarioESenha {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String nome;

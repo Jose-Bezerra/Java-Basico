@@ -1,8 +1,8 @@
-package com.loiane.cursojava.exercicios;
+package com.loiane.cursojava.labs.aula17;
 
 import java.util.Scanner;
 
-public class ValideIdadeSalarioSexoEstadoCivil {
+public class Exer03_ValideIdadeSalarioSexoEstadoCivil {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String nome, sexo, estadoCivil;
