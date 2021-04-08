@@ -2,7 +2,7 @@ package com.loiane.cursojava.labs.aula17;
 
 import java.util.Scanner;
 
-public class Exer27 {
+public class Exerc27 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Informe a quantidade de temperaturas para cálculo da média: ");
