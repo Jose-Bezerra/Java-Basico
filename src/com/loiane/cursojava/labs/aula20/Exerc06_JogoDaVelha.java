@@ -16,10 +16,10 @@ public class Exerc06_JogoDaVelha {
 
         while (!ganhou) {
             if (jogada % 2 == 1) { //jogador 1
-                System.out.println("Vez do jogador 1. Esolha linha e coluna (1-3).");
+                System.out.println("Vez do jogador 1. Escolha linha e coluna (1-3).");
                 sinal = 'X';
             } else  {
-                System.out.println("Vez do jogador 2. Esolha linha e coluna (1-3).");
+                System.out.println("Vez do jogador 2. Escolha linha e coluna (1-3).");
                 sinal = 'O';
             }
 
@@ -45,6 +45,7 @@ public class Exerc06_JogoDaVelha {
                 }
             }
 
+            //verifica posição válida
             linha--;
             coluna--;
             if (jogoDaVelha[linha][coluna] == 'X' || jogoDaVelha [linha][coluna] == 'O') {
