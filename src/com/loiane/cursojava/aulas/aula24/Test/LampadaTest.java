@@ -13,7 +13,16 @@ public class LampadaTest {
 
         lampada.tipos = new String[5];
         lampada.tipos[0] = "Abajur";
-        lampada.tipos[0] = "Lampeões";
+        lampada.tipos[1] = "Lampeões";
+
+
+        lampada.ligar();
+        lampada.mostrarEstado();
+        lampada.desligar();
+        lampada.mostrarEstado();
+        lampada.mudarEstado();;
+        lampada.mostrarEstado();
+
 
     }
 }
