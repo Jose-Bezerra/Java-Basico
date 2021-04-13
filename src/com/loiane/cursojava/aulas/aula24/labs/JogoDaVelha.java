@@ -2,8 +2,29 @@ package com.loiane.cursojava.aulas.aula24.labs;
 
 public class JogoDaVelha {
 
-    public char[][] tabuleiroJogo = new char[3][3];
-    public int jogada = 1;
+    private char[][] tabuleiroJogo;
+    private int jogada;
+
+    public JogoDaVelha() {
+        tabuleiroJogo = new char[3][3];
+        jogada = 1;
+    }
+
+    public char[][] getTabuleiroJogo() {
+        return tabuleiroJogo;
+    }
+
+    public void setTabuleiroJogo(char[][] tabuleiroJogo) {
+        this.tabuleiroJogo = tabuleiroJogo;
+    }
+
+    public int getJogada() {
+        return jogada;
+    }
+
+    public void setJogada(int jogada) {
+        this.jogada = jogada;
+    }
 
     public boolean validarJogada(int linha, int coluna, char sinal) {
         if (tabuleiroJogo[linha][coluna] == 'X' || tabuleiroJogo[linha][coluna] == 'O') {

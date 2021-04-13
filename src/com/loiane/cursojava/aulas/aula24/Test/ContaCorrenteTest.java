@@ -3,20 +3,20 @@ import com.loiane.cursojava.aulas.aula24.labs.ContaCorrente;
 public class ContaCorrenteTest {
     public static void main(String[] args) {
         ContaCorrente contaCorrente = new ContaCorrente();
-        contaCorrente.numero = "1095668";
-        contaCorrente.agencia = "0321";
-        contaCorrente.especial = true;
-        contaCorrente.limiteEspecial = 500;
-        contaCorrente.valorEspecialUsado = 0;
-        contaCorrente.saldo = -10;
+        contaCorrente.setNumero("1095668");
+        contaCorrente.setAgencia("0321");
+        contaCorrente.setEspecial(true);
+        contaCorrente.setLimiteEspecial(500);
+        contaCorrente.setValorEspecialUsado(0);
+        contaCorrente.setSaldo(-10);
 
-        System.out.println("Saldo da conta " + contaCorrente.numero + " / ag " + contaCorrente.agencia
-            +  " é: " + contaCorrente.saldo);
+        System.out.println("Saldo da conta " + contaCorrente.getNumero() + " / ag " + contaCorrente.getAgencia()
+            +  " é: " + contaCorrente.getSaldo());
 
         boolean saqueEfetuado = contaCorrente.realizarSaque(10);
         if (saqueEfetuado){
             System.out.println("Saque efetuado com sucesso!");
-            System.out.println("Saldo atual da conta: " + contaCorrente.saldo);
+            System.out.println("Saldo atual da conta: " + contaCorrente.getSaldo());
         } else {
             System.out.println("Saldo insuficiente!!");
         }
